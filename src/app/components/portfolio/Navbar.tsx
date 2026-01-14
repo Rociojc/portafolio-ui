@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import logo from '@/assets/logo-personal.svg';
 
 const navLinks = [
   { name: 'Inicio', href: '#hero' },
@@ -29,8 +30,8 @@ export function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="text-2xl font-bold text-brand-primary">
-          PORTAFOLIO
+        <a href="#" className="flex items-center">
+          <img src={logo} alt="Logo" className="h-8 md:h-10 w-auto" />
         </a>
 
         {/* Desktop Menu */}
