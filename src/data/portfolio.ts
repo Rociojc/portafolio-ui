@@ -1,4 +1,5 @@
-import heroImage from '@/assets/hero-image.jpeg';
+import heroImage from "@/assets/hero-image.jpeg";
+import aboutMeImage from "@/assets/about-me-image.jpeg";
 
 export interface Project {
   id: number;
@@ -28,7 +29,6 @@ export interface AboutData {
   title: string;
   description: string[];
   image: string;
-  stats: Stat[];
 }
 
 export const heroData: HeroData = {
@@ -43,17 +43,12 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   title: "Acerca de mí",
   description: [
-    "Soy una apasionada diseñadora UX/UI con un enfoque en crear interfaces limpias, accesibles y emocionalmente resonantes. Mi viaje en el diseño comenzó con una fascinación por cómo las personas interactúan con la tecnología.",
-    "Me especializo en transformar problemas complejos en soluciones simples y elegantes. Creo firmemente que el buen diseño no solo se ve bien, sino que funciona a la perfección para el usuario final.",
-    "Cuando no estoy diseñando, me encontrarás explorando nuevas cafeterías, aprendiendo sobre psicología cognitiva o simplemente disfrutando de un buen libro.",
+    "Soy Diseñadora UX/UI Junior con una fuerte motivación por crear experiencias digitales claras, útiles y centradas en las personas. Vengo del mundo del desarrollo Frontend, lo que me permitió entender cómo se construyen los productos por dentro, y hoy aplico ese conocimiento para diseñar soluciones más completas, funcionales y viables.",
+    "Me apasiona resolver problemas reales, organizar ideas complejas y convertirlas en interfaces simples que cualquier persona pueda usar sin esfuerzo. Disfruto especialmente las etapas de investigación, porque creo que un buen diseño siempre empieza escuchando, observando y comprendiendo a los usuarios.",
+    "Trabajo con herramientas como Figma, FigmaMake y metodologías centradas en el usuario, y estoy en constante aprendizaje para fortalecer mis habilidades in investigación, arquitectura de información, prototipado y diseño visual.",
+    "Cuando diseño, busco que cada decisión tenga un propósito y que el producto final no solo se vea bien, sino que genere una experiencia significativa.",
   ],
-  image:
-    "https://images.unsplash.com/photo-1519337364444-c5eeec430101?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjYXN1YWwlMjBjcmVhdGl2ZSUyMGRlc2lnbmVyJTIwd29ya2luZyUyMGxhcHRvcHxlbnwxfHx8fDE3NjgzMjM5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-  stats: [
-    { value: "2+", label: "Años de Exp." },
-    { value: "15+", label: "Proyectos" },
-    { value: "100%", label: "Dedicación" },
-  ],
+  image: aboutMeImage,
 };
 
 export const projects: Project[] = [

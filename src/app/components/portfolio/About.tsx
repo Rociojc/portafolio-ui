@@ -1,5 +1,5 @@
-import { motion } from 'motion/react';
-import { aboutData } from '@/data/portfolio';
+import { motion } from "motion/react";
+import { aboutData } from "@/data/portfolio";
 
 export function About() {
   return (
@@ -13,10 +13,10 @@ export function About() {
             viewport={{ once: true }}
             className="order-2 md:order-1 relative"
           >
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl">
-              <img 
-                src={aboutData.image} 
-                alt="Working at laptop" 
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl max-w-md mx-auto">
+              <img
+                src={aboutData.image}
+                alt="Working at laptop"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -31,19 +31,12 @@ export function About() {
             viewport={{ once: true }}
             className="order-1 md:order-2"
           >
-            <h2 className="text-4xl font-bold text-brand-primary mb-6">{aboutData.title}</h2>
+            <h2 className="text-4xl font-bold text-brand-primary mb-6">
+              {aboutData.title}
+            </h2>
             <div className="space-y-4 text-gray-600 leading-relaxed">
               {aboutData.description.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
-              ))}
-            </div>
-            
-            <div className="mt-8 grid grid-cols-3 gap-4 text-center">
-              {aboutData.stats.map((stat, index) => (
-                <div key={index} className="p-4 bg-brand-light rounded-xl">
-                  <h3 className="text-3xl font-bold text-brand-secondary">{stat.value}</h3>
-                  <p className="text-sm text-gray-500">{stat.label}</p>
-                </div>
               ))}
             </div>
           </motion.div>
