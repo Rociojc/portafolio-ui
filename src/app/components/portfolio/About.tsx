@@ -4,7 +4,7 @@ import { aboutData } from "@/data/portfolio";
 export function About() {
   return (
     <section id="about" className="py-24 bg-white">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-8">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -13,11 +13,11 @@ export function About() {
             viewport={{ once: true }}
             className="order-2 md:order-1 relative"
           >
-            <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl max-w-md mx-auto">
+            <div className="relative z-10 rounded-3xl overflow-hidden shadow-xl">
               <img
                 src={aboutData.image}
                 alt="Working at laptop"
-                className="w-full h-auto object-cover"
+                className="w-full max-h-[500px] object-cover"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-brand-accent rounded-full -z-10 opacity-50 blur-xl"></div>

@@ -1,5 +1,9 @@
 import heroImage from "@/assets/hero-image.jpeg";
 import aboutMeImage from "@/assets/about-me-image.jpeg";
+import laComarcaImage from "@/assets/home_la_comarca.png";
+import rentMeUpImage from "@/assets/home_rent_me_up.jpg";
+import dataConsultoresImage from "@/assets/home_data_consultores.png";
+import rutinasGimnasioImage from "@/assets/home_rutinas_gimnasio.png";
 
 export interface Project {
   id: number;
@@ -9,7 +13,7 @@ export interface Project {
   longDescription: string;
   image: string;
   tags: string[];
-  url: string;
+  url?: string;
 }
 
 export interface HeroData {
@@ -54,41 +58,49 @@ export const aboutData: AboutData = {
 export const projects: Project[] = [
   {
     id: 1,
-    title: "EcoTrack Mobile App",
+    title: "La Comarca",
     category: "UX/UI Design",
     description:
-      "Una aplicación móvil para ayudar a los usuarios a reducir su huella de carbono mediante el seguimiento de hábitos diarios.",
+      "Rediseño de la experiencia digital para un desarrollo residencial sostenible, enfocado en conversión y usabilidad.",
     longDescription:
-      "EcoTrack es una solución integral diseñada para empoderar a los individuos en la lucha contra el cambio climático. A través de una interfaz intuitiva y gamificada, los usuarios pueden registrar sus actividades diarias, recibir consejos personalizados para reducir su consumo y visualizar su impacto ambiental positivo a lo largo del tiempo. El proyecto incluyó investigación de usuarios, wireframing, prototipado de alta fidelidad y pruebas de usabilidad.",
-    image:
-      "https://images.unsplash.com/photo-1762341119237-98df67c9c3c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2UlMjBkZXNpZ24lMjB1aXxlbnwxfHx8fDE3NjgzMjM5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["Figma", "Prototyping", "User Research"],
-    url: "https://dribbble.com",
+      "La Comarca es el proyecto más reciente en mi trayectoria, donde realicé un rediseño integral de su plataforma digital. El objetivo principal fue optimizar el flujo de navegación para potenciales usuarios. Desarrollé prototipos interactivos de alta fidelidad. Apliqué principios de diseño emocional para conectar los valores de sostenibilidad de la marca con la interfaz visual, logrando una estructura limpia y moderna.",
+    image: laComarcaImage,
+    tags: ["Figma", "Prototyping", "html", "css", "react"],
+    url: "https://la-comarca-web.netlify.app/",
   },
   {
     id: 2,
-    title: "Analytics Dashboard",
-    category: "UI Design",
+    title: "Rent Me Up",
+    category: "Web Development",
     description:
-      "Diseño de un panel de control para visualización de datos complejos en tiempo real para una empresa SaaS.",
+      "Proyecto integrador desarrollado como parte del programa de certificación en Desarrollo Front-End en Digital House.",
     longDescription:
-      "Este dashboard fue creado para una empresa SaaS que necesitaba simplificar la visualización de métricas complejas para sus clientes empresariales. El desafío principal fue organizar grandes volúmenes de datos en una estructura jerárquica clara sin abrumar al usuario. Utilicé un esquema de color oscuro para reducir la fatiga visual y destaqué las métricas clave con colores de acento vibrantes.",
-    image:
-      "https://images.unsplash.com/photo-1575388902449-6bca946ad549?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjB1aSUyMGRlc2lnbiUyMGRhcmslMjBtb2RlfGVufDF8fHx8MTc2ODMxNDU3MXww&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["Dashboard", "Data Viz", "Dark Mode"],
-    url: "https://behance.net",
+      "Participé como desarrolladora front-end, implementando la interfaz y funcionalidad principal del sitio web de reservas. Desarrollé la aplicación utilizando React.js, con estilos en Styled Components y consumo de API REST. Apliqué buenas prácticas de diseño responsive, asegurando una experiencia consistente en diferentes dispositivos. Colaboré con el equipo de backend en la integración de la API (Java + Spring Security + JWT + MySQL). Participé en la documentación UML y organización de la base de datos bajo Metodologías Ágiles (Scrum).",
+    image: rentMeUpImage,
+    tags: ["html", "css", "react"],
   },
   {
     id: 3,
-    title: "Modern Portfolio Web",
+    title: "Data Consultores",
     category: "Web Design",
     description:
-      "Diseño de sitio web personal para un fotógrafo, enfocándose en la presentación visual y tipografía.",
+      "Diseño y desarrollo de sitio web institucional para consultoría empresarial, enfocado en jerarquía visual.",
     longDescription:
-      "Un sitio web minimalista y elegante diseñado para destacar el trabajo fotográfico del cliente. La interfaz pasa a un segundo plano, permitiendo que las imágenes sean las protagonistas. Se implementó una navegación fluida y animaciones sutiles para crear una experiencia de usuario inmersiva y sofisticada.",
-    image:
-      "https://images.unsplash.com/photo-1760008486593-a85315610136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWJzaXRlJTIwbGFuZGluZyUyMHBhZ2UlMjBkZXNpZ258ZW58MXx8fHwxNzY4MzIzOTgyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-    tags: ["Web", "Responsive", "Minimalist"],
-    url: "https://github.com",
+      "Diseñé y desarrollé la página web institucional para Data Consultores S.A.S, una empresa de consultoría, con el objetivo de fortalecer mi experiencia en desarrollo web y diseño visual. El proceso comenzó con la creación de mockups y prototipos de alta fidelidad en Figma, aplicando una composición moderna y limpia. Posteriormente, desarrollé el frontend utilizando HTML y CSS nativo, asegurando un diseño totalmente responsivo que se adapta perfectamente a dispositivos móviles y de escritorio. Durante el desarrollo, apliqué principios básicos de estructura y jerarquía visual para optimizar la presentación de los servicios y mejorar la navegación del usuario final.",
+    image: dataConsultoresImage,
+    tags: ["Figma", "Prototyping", "html", "css"],
+    url: "https://data-consultores.netlify.app/",
+  },
+  {
+    id: 4,
+    title: "Rutinas de Gimnasio",
+    category: "Web Design",
+    description:
+      "Desarrollo de un sitio web informativo masivo con rutinas personalizadas y contenido multimedia.",
+    longDescription:
+      "Durante este proyecto desarrollé un sitio web informativo integral para un gimnasio local, con el objetivo de practicar mis habilidades en desarrollo web y diseño visual de gran escala. El desafío incluyó el diseño de mockups y prototipos en Figma, respetando y potenciando el branding existente (logos, paleta de colores e imágenes). Desarrollé un sistema de 24 páginas HTML con estilos CSS responsivos, organizando rutinas de entrenamiento diferenciadas por días y género, cada una con descripciones detalladas, imágenes de apoyo y videos explicativos. Este proyecto marcó mi primer acercamiento al diseño digital de forma autodidacta, implementando principios fundamentales de estructura visual y usabilidad.",
+    image: rutinasGimnasioImage,
+    tags: ["Figma", "Prototyping", "html", "css"],
+    url: "https://rutinas-de-gimnasio.netlify.app/",
   },
 ];

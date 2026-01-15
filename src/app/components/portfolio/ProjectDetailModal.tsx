@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ExternalLink } from 'lucide-react';
 import { Project } from '@/data/portfolio';
@@ -8,6 +9,13 @@ interface ProjectDetailModalProps {
 }
 
 export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps) {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, []);
+
   if (!project) return null;
 
   return (
@@ -75,16 +83,18 @@ export function ProjectDetailModal({ project, onClose }: ProjectDetailModalProps
                     <p>{project.longDescription}</p>
                   </div>
 
-                  <div className="pt-6 border-t border-gray-100 flex justify-end">
-                    <a
-                      href={project.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-8 py-4 bg-brand-primary text-white rounded-full font-bold hover:bg-brand-primary/90 transition-all transform hover:-translate-y-1 shadow-lg"
-                    >
-                      Ver Proyecto Completo <ExternalLink size={20} />
-                    </a>
-                  </div>
+                  {project.url && (
+                    <div className="pt-6 border-t border-gray-100 flex justify-end">
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-8 py-4 bg-brand-primary text-white rounded-full font-bold hover:bg-brand-primary/90 transition-all transform hover:-translate-y-1 shadow-lg"
+                      >
+                        Ver Proyecto Completo <ExternalLink size={20} />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>
