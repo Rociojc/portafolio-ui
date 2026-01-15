@@ -38,7 +38,7 @@ export interface AboutData {
 export const heroData: HeroData = {
   greeting: "Hola, soy",
   name: "Rocio Jiménez",
-  role: "Diseñadora UX/UI Junior",
+  role: "Diseñadora UX/UI",
   description:
     "Creo experiencias digitales funcionales y estéticas, con atención al detalle y capacidad técnica para dar vida a proyectos digitales.",
   image: heroImage,
