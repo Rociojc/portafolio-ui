@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Download, FileText } from "lucide-react";
+import previewImage from "@/assets/hero-image.jpeg";
 
 export function Curriculum() {
   return (
@@ -14,10 +15,10 @@ export function Curriculum() {
               Experiencia y Educación
             </h2>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              Mi trayectoria profesional incluye trabajo freelance,
-              colaboraciones con startups y una sólida formación académica en
-              diseño digital. Descarga mi CV para ver el detalle completo de mis
-              habilidades y experiencia.
+              Como Diseñadora UX/UI Junior con un sólido perfil en Desarrollo
+              Front-End, combino la investigación centrada en el usuario con la
+              implementación técnica efectiva. Descarga mi CV para ver el
+              detalle completo de mis habilidades y experiencia.
             </p>
 
             <div className="space-y-6 mb-8">
@@ -28,7 +29,7 @@ export function Curriculum() {
                 <div>
                   <h4 className="font-bold text-brand-primary">Educación</h4>
                   <p className="text-sm text-gray-500">
-                    Grado en Diseño Digital, Universidad de Diseño
+                    Tech Developer | Digital House
                   </p>
                 </div>
               </div>
@@ -39,20 +40,23 @@ export function Curriculum() {
                 <div>
                   <h4 className="font-bold text-brand-primary">Experiencia</h4>
                   <p className="text-sm text-gray-500">
-                    Designer Freelance & Junior UI Designer en TechStudio
+                    Frontend Developer Jr | Infracommerce Latam
                   </p>
                 </div>
               </div>
             </div>
 
-            <motion.button
+            <motion.a
+              href="/cv-rocio-jimenez-2025.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-brand-secondary text-white rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-brand-secondary/90 transition-all flex items-center gap-3"
+              className="px-8 py-4 bg-brand-secondary text-white rounded-full font-bold shadow-lg hover:shadow-xl hover:bg-brand-secondary/90 transition-all flex items-center gap-3 w-fit cursor-pointer"
             >
               <Download size={20} />
               Descargar Curriculum
-            </motion.button>
+            </motion.a>
           </div>
 
           <motion.div
@@ -67,7 +71,7 @@ export function Curriculum() {
               <div className="flex items-center gap-4 border-b pb-4 mb-4">
                 <div className="w-12 h-12 bg-gray-200 rounded-full overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1631127900584-188260979218?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0JTIwd29tYW4lMjBjb2xvcmZ1bHxlbnwxfHx8fDE3NjgzMjM5ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080"
+                    src={previewImage}
                     className="w-full h-full object-cover"
                   />
                 </div>
