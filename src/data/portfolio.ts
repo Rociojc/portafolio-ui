@@ -47,9 +47,9 @@ export const heroData: HeroData = {
 export const aboutData: AboutData = {
   title: "Acerca de mí",
   description: [
-    "Soy Diseñadora UX/UI Junior con una fuerte motivación por crear experiencias digitales claras, útiles y centradas en las personas. Vengo del mundo del desarrollo Frontend, lo que me permitió entender cómo se construyen los productos por dentro, y hoy aplico ese conocimiento para diseñar soluciones más completas, funcionales y viables.",
-    "Me apasiona resolver problemas reales, organizar ideas complejas y convertirlas en interfaces simples que cualquier persona pueda usar sin esfuerzo. Disfruto especialmente las etapas de investigación, porque creo que un buen diseño siempre empieza escuchando, observando y comprendiendo a los usuarios.",
-    "Trabajo con herramientas como Figma, FigmaMake y metodologías centradas en el usuario, y estoy en constante aprendizaje para fortalecer mis habilidades in investigación, arquitectura de información, prototipado y diseño visual.",
+    "Soy Diseñadora UX/UI con una fuerte motivación por crear experiencias digitales claras, útiles y centradas en las personas. Vengo del mundo del desarrollo Frontend, lo que me permitió entender cómo se construyen los productos por dentro, y hoy aplico ese conocimiento para diseñar soluciones más completas, funcionales y viables.",
+    "Me apasiona resolver problemas reales, organizar ideas complejas y convertirlas en interfaces simples que cualquier persona pueda usar sin esfuerzo.",
+    "Mi stack de herramientas integra Figma con flujos de trabajo potenciados por Inteligencia Artificial Generativa. Utilizo herramientas como Gemini, Gemini CLI y Figma Make para agilizar la transición del diseño al código funcional, aplicando un enfoque de Vibe Coding que me permite optimizar tiempos de entrega y garantizar una arquitectura de componentes limpia y escalable.",
     "Cuando diseño, busco que cada decisión tenga un propósito y que el producto final no solo se vea bien, sino que genere una experiencia significativa.",
   ],
   image: aboutMeImage,
