@@ -47,7 +47,7 @@ export function Curriculum() {
             </div>
 
             <motion.a
-              href="/cv-rocio-jimenez-2025.pdf"
+              href="/cv-ui-rocio-jimenez.pdf"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
