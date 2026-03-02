@@ -63,9 +63,9 @@ export const projects: Project[] = [
     description:
       "Rediseño de la experiencia digital para un desarrollo residencial sostenible, enfocado en conversión y usabilidad.",
     longDescription:
-      "La Comarca es el proyecto más reciente en mi trayectoria, donde realicé un rediseño integral de su plataforma digital. El objetivo principal fue optimizar el flujo de navegación para potenciales usuarios. Desarrollé prototipos interactivos de alta fidelidad. Apliqué principios de diseño emocional para conectar los valores de sostenibilidad de la marca con la interfaz visual, logrando una estructura limpia y moderna.",
+      "El proyecto se ejecutó bajo un flujo de AI-Augmented Design, utilizando herramientas de IA generativa para la conceptualización y la organización estructural de los componentes. Mediante un enfoque de Vibe Coding, se optimizó la transición del diseño al código funcional, garantizando una arquitectura escalable y una implementación técnica eficiente que mantiene la fidelidad visual en todo momento.",
     image: laComarcaImage,
-    tags: ["Figma", "Prototyping", "html", "css", "react"],
+    tags: ["Figma", "Prototyping", "AI Workflow", "Vibe Coding"],
     url: "https://la-comarca-web.netlify.app/",
   },
   {
